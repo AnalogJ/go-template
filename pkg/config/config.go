@@ -2,8 +2,8 @@ package config
 
 import (
 	"fmt"
-	"github.com/analogj/go-template/pkg/errors"
 	"github.com/analogj/go-util/utils"
+	"github.com/packagrio/gocli-template/pkg/errors"
 	"github.com/spf13/viper"
 	"log"
 	"os"

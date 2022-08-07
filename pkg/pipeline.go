@@ -1,7 +1,7 @@
 package pkg
 
 import (
-	"github.com/analogj/go-template/pkg/config"
+	"github.com/packagrio/gocli-template/pkg/config"
 )
 
 type Pipeline struct {

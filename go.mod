@@ -1,4 +1,4 @@
-module github.com/analogj/go-template
+module github.com/packagrio/gocli-template
 
 go 1.18
 

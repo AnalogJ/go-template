@@ -3,11 +3,11 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/analogj/go-template/pkg"
-	"github.com/analogj/go-template/pkg/config"
-	"github.com/analogj/go-template/pkg/errors"
-	"github.com/analogj/go-template/pkg/version"
 	"github.com/analogj/go-util/utils"
+	"github.com/packagrio/gocli-template/pkg"
+	"github.com/packagrio/gocli-template/pkg/config"
+	"github.com/packagrio/gocli-template/pkg/errors"
+	"github.com/packagrio/gocli-template/pkg/version"
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v2"
 	"io"
@@ -48,7 +48,7 @@ func main() {
 		},
 		Before: func(c *cli.Context) error {
 
-			packagrUrl := "github.com/analogj/go-template"
+			packagrUrl := "github.com/packagrio/gocli-template"
 
 			versionInfo := fmt.Sprintf("%s.%s-%s", goos, goarch, version.VERSION)
 

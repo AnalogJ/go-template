@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/packagrio/packagr:latest-golang
     env:
-      PROJECT_PATH: /go/src/github.com/analogj/go-template
+      PROJECT_PATH: /go/src/github.com/packagrio/gocli-template
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -36,12 +36,12 @@ jobs:
       - name: Archive
         uses: actions/upload-artifact@v2
         with:
-          name: taggr-linux-binary
+          name: appcli-linux-binary
           path: ${{ env.PROJECT_PATH }}/appcli-linux-amd64
           retention-days: 3
       - name: Archive
         uses: actions/upload-artifact@v2
         with:
-          name: taggr-mac-binary
+          name: appcli-mac-binary
           path: ${{ env.PROJECT_PATH }}/appcli-darwin-amd64
           retention-days: 3
